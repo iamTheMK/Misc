@@ -22,9 +22,7 @@ Data (an int) is a value type, but since it's inside a class, it is stored withi
 Name (a string) is a reference type, so only a reference is stored inside Storage, while the actual string "Example" is stored in another location on the heap.
 
 🔄 Memory Layout Representation
-vbnet
-Copy
-Edit
+```
 Stack:
     obj  ----->  [Storage object reference] (Points to Heap)
 
@@ -34,6 +32,7 @@ Heap:
     ├── Name [Reference to "Example" in Heap]
     
     [ "Example" String (Stored separately) ]
+```
 📌 Key Takeaways
 
 Objects (reference types) are stored in the heap, while their references are stored in the stack.
